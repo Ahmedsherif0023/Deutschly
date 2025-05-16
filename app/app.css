@@ -1,15 +1,430 @@
-@import "tailwindcss";
-
-@theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
 html,
 body {
-  @apply bg-white dark:bg-gray-950;
+  margin: 0px;
+  padding: 0px;
+  background: #41343c;
+  background: linear-gradient(
+    275deg,
+    rgba(65, 52, 60, 1) 31%,
+    rgba(171, 43, 53, 1) 100%
+  );
+  color: #f0f0f0;
+}
 
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
-  }
+/*Home Styles*/
+
+.Home-container .main {
+  display: flex;
+  flex-direction: row;
+  margin: 40px;
+  justify-content: space-between;
+}
+
+.Home-container .main .left-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.main .left-section .para {
+  width: 616px;
+  font-family: Inter; /* Body */
+  font-size: 18px;
+  line-height: 29px;
+  font-weight: 400;
+  color: #8c8d8bff;
+}
+.main .left-section .headd {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #636ae8ff;
+}
+
+.main .left-section h1 {
+  font-family: Archivo;
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 700;
+  color: #242524ff;
+}
+
+.main .left-section button {
+  position: absolute;
+  top: 394px;
+  left: 80px;
+  width: 193px;
+  height: 44px;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Inter;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #f0f0f0; /* white */
+  background: #636ae8ff; /* primary-500 */
+  opacity: 1;
+  border: none;
+  border-radius: 6px;
+}
+
+.main .left-section button:hover {
+  color: #ffffffff; /* white */
+  background: #4850e4ff; /* primary-550 */
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.main .left-section button a {
+  color: #f0f0f0;
+  text-decoration: none;
+}
+
+.main .left-section button:hover:active {
+  color: #ffffffff; /* white */
+  background: #2c35e0ff; /* primary-600 */
+}
+
+.Home-container .main .right-section img {
+  width: 623px;
+  border-radius: 20px;
+}
+
+.Second-main {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Second-main h1 {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 700;
+  color: #242524ff;
+}
+
+.Second-main .Cards {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping to next row */
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+.Second-main .card {
+  background-color: #41343c;
+  padding: 10px;
+  flex: 0 1 40%; /* Each card takes about 40% width */
+  max-width: 500px; /* Optional: limit max width */
+  min-width: 300px; /* Optional: minimum width */
+  margin: 16px; /* Optional: vertical spacing */
+  height: 150px;
+  border: 4px solid #8c8d8bff; /* Added border */
+  border-radius: 20px;
+}
+
+.Second-main .card h1 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #f0f0f0;
+}
+
+.Second-main .card p {
+  font-family: Inter; /* Body */
+  font-size: 14px;
+  line-height: 23px;
+  font-weight: 500;
+  color: #8c8d8bff;
+}
+
+.Third-main {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px;
+}
+
+.Third-main .right-section {
+  width: 500px;
+  margin: auto;
+}
+
+.Third-main .right-section .points {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap; /* Allow wrapping to next row */
+  align-content: flex-start;
+  gap: 5px;
+}
+
+.Third-main .right-section .point {
+  flex: 0 1 48%; /* Each point takes about half the row */
+  box-sizing: border-box;
+  margin-bottom: 16px;
+  background: none; /* Optional: remove if you want a background */
+}
+
+.Third-main .right-section .point-header {
+  display: flex;
+  align-items: center;
+  gap: 16px; /* space between circle and h1 */
+}
+.Third-main .right-section .point-header h1 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #ffffffff; /* white */
+}
+.Third-main .right-section .point p {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #8c8d8bff;
+}
+
+.points .circle {
+  width: 40px;
+  height: 40px;
+  background: #636ae8ff;
+  border-radius: 9999px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0; /* Remove bottom margin for horizontal alignment */
+}
+
+.Fourth-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 40px;
+}
+
+.Fourth-main h1 {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 700;
+  color: #242524ff;
+  margin: 40px;
+}
+
+.Fourth-main .cards {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+.Fourth-main .cardd {
+  width: 300px;
+  height: 206px;
+  background: #40333bff;
+  border-radius: 8px;
+  border-width: 1px;
+  border-color: #ebebeaff;
+  border-style: solid;
+  box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f; /* shadow-xs */
+  margin: auto;
+  gap: 10px;
+  padding: 10px;
+}
+
+.Fourth-main .cardd p {
+  top: 28px;
+  left: 25px;
+  width: 300px;
+  font-family: Inter; /* Body */
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #8c8d8bff;
+}
+
+.Fourth-main .cardd .person img {
+  width: 40px;
+  height: 40px;
+}
+
+.person {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.person p {
+  margin-left: 10px;
+}
+
+.Fifth-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px;
+}
+
+.Fifth-main .left-section h1 {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #ffffffff; /* white */
+}
+.Fifth-main .left-section p {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #ffffffff; /* white */
+}
+
+.Fifth-main .right-section input {
+  width: 256px;
+  height: 40px;
+  padding-left: 12px;
+  padding-right: 12px;
+  font-family: Inter;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  background: #ffffffff; /* white */
+  border-radius: 6px;
+  border-width: 0px;
+  border-color: #ffffffff; /* white */
+  border-style: solid;
+  outline: none;
+}
+
+.Fifth-main .right-section input:hover {
+  color: #c2c3c2ff;
+  background: #ffffffff; /* white */
+  border-color: #ffffffff; /* white */
+  font-size: 16px;
+  transition: 0.5s ease-in-out;
+}
+
+.Fifth-main .right-section input:focused {
+  color: #c2c3c2ff;
+  background: #ffffffff; /* white */
+  border-color: #ffffffff; /* white */
+}
+
+.Fifth-main .right-section input:disabled {
+  color: #c2c3c2ff;
+  background: #ffffffff; /* white */
+  border-color: #ffffffff; /* white */
+}
+
+.Fifth-main .right-section button {
+  top: 116px;
+  left: 1259px;
+  width: 100.59375px;
+  height: 40px;
+  padding: 0 12px;
+  align-items: center;
+  justify-content: center;
+  font-family: Inter;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 600;
+  color: #393939ff;
+  background: #f7f7f7ff;
+  opacity: 1;
+  border: none;
+  border-radius: 6px;
+  margin-left: 20px;
+}
+
+.Fifth-main .right-section button:hover {
+  color: #393939ff;
+  background: #c3c3c3ff;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  font-size: 16px;
+}
+
+.Sixth-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 40px;
+}
+
+.Sixth-main .Navs-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #242524ff;
+}
+
+.Sixth-main .AppName img {
+  width: 290px;
+  padding: 0px;
+}
+
+.Sixth-main .Navs {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.Sixth-main .Navs ul {
+  list-style: none;
+}
+.Sixth-main .Navs ul a {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #8c8d8bff;
+}
+
+.Sixth-main .Navs-head,
+.Sixth-main .Navs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 900px; /* Optional: set a max width for better centering */
+  margin: 0 auto;
+}
+
+.Sixth-main .Navs-head h1,
+.Sixth-main .Navs ul {
+  flex: 1 1 0;
+  text-align: center;
+}
+
+.Sixth-main .Navs ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  line-height: 30px;
+}
+
+/*Alphabet Page Styles*/
+
+/*Vocabulary Page Styles*/
+/*Sentence formation Page Styles*/
+.SentencesForm-container,
+.AlphabetLearning-container,
+.Vocabulary-container,
+.OurMission-container ,
+.Team-container,
+.ContactUs-container,
+.FAQ-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
