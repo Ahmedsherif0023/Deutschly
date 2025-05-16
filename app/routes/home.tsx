@@ -35,7 +35,7 @@ export default function Home() {
               vocabulary, and form sentences with confidence. Personalized
               learning for rapid progress.
             </p>
-            <a href="/VocabPage">
+            <a href="/AlphabetPage">
               {" "}
               <button>Start Learning Now</button>
             </a>

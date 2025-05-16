@@ -48,6 +48,7 @@ body {
   color: #242524ff;
 }
 
+
 .main .left-section button {
   position: absolute;
   top: 394px;
@@ -415,10 +416,102 @@ body {
 
 /*Alphabet Page Styles*/
 
+.AlphabetLearning-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+position: relative; /* Add this */
+}
+
+/* .AlphabetLearning-container .Headd{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+} */
+
+.AlphabetLearning-container .Headd {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;   /* Align content to the left */
+  width: 89%;
+}
+
+.AlphabetLearning-container .Headd h1{
+   font-size: 36px; 
+  line-height: 40px; 
+  font-weight: 700; 
+  color: #242524FF;
+  margin-bottom: 0px;
+}
+.AlphabetLearning-container .Headd p{
+   font-size: 18px; 
+  line-height: 28px; 
+  font-weight: 400; 
+  color: #8C8D8BFF; 
+}
+
+.AlphabetLearning-container .pronouncee{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width:90%;
+  position: relative;
+}
+
+.Cards {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* 6 cards per row */
+  gap: 24px; /* space between cards */
+  width: 70%;
+  justify-items: center;
+}
+
+
+.WordExamples{
+   position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  margin-top: 400px;
+  padding: 20px;
+  border-radius: 20px;
+  background: #40333BFF; 
+  border-radius: 8px; 
+  border-width: 2px; 
+  border-color: #636AE8FF; /* primary-500 */
+  border-style: solid; 
+  box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1F; /* shadow-xs */
+  width: 240px;
+  height: 200px;
+}
+.WordExamples div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.WordExamples ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  margin: auto;
+  width: 270px;
+}
+
+
 /*Vocabulary Page Styles*/
 /*Sentence formation Page Styles*/
 .SentencesForm-container,
-.AlphabetLearning-container,
 .Vocabulary-container,
 .OurMission-container ,
 .Team-container,

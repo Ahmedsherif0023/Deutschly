@@ -1,0 +1,46 @@
+.card{
+ width: 139px; 
+  height: 187px; 
+  background: #40333BFF; 
+  border-radius: 8px; 
+  border-width: 2px; 
+  border-color: #636AE8FF; /* primary-500 */
+  border-style: solid; 
+  box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1F; /* shadow-xs */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card button {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+.card h1{
+   font-size: 60px; 
+  line-height: 60px; 
+  font-weight: 700; 
+  color: #FFFFFFFF; /* white */
+  margin-bottom: 0px;
+}
+
+.card .pronouncebtn p{
+  font-size: 14px; 
+  line-height: 20px; 
+  font-weight: 400; 
+  color: #8C8D8BFF; 
+}
+
+.pronouncebtn{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}

@@ -9,3 +9,4 @@ route("Team", "routes/Team.tsx"),
 route("ContactUs", "routes/ContactUs.tsx"),
 route("FAQ", "routes/FAQ.tsx"),
 ] satisfies RouteConfig;
+export const loader = () => null;
