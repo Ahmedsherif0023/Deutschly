@@ -270,7 +270,7 @@ const AlphabetPage = () => {
                       >
                         <span>{word}</span>
                         <span style={{ color: "#888" }}>({translation})</span>
-                        <button
+                        <button className="pronouncebtn"
                           onClick={() => speakGerman(word)}
                           style={{ marginLeft: 8 }}
                         >

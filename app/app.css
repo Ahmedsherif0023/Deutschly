@@ -508,6 +508,16 @@ position: relative; /* Add this */
   width: 270px;
 }
 
+.pronouncebtn{
+    background: transparent;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
 
 /*Vocabulary Page Styles*/
 /*Sentence formation Page Styles*/
