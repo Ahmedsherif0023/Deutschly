@@ -29,7 +29,7 @@ export default function Home() {
         <div className="main">
           <div className="left-section">
             <p className="headd">Unlock Fluency Faster</p>
-            <h1>Master German With AI</h1>
+            <h1>Master German With Deutschly</h1>
             <p className="para">
               Deutschly uses cutting-edge AI to help you spell, build
               vocabulary, and form sentences with confidence. Personalized
@@ -202,6 +202,9 @@ export default function Home() {
               <li>
                 <a href="/AlphabetPage">Alphabet</a>
               </li>
+                <li>
+              <a href="/PronounsPage">Pronouns</a>
+            </li>
               <li>
                 <a href="/VocabPage">Vocabulary</a>
               </li>

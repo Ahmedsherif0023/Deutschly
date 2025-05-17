@@ -8,5 +8,6 @@ route("OurMission", "routes/OurMission.tsx"),
 route("Team", "routes/Team.tsx"),
 route("ContactUs", "routes/ContactUs.tsx"),
 route("FAQ", "routes/FAQ.tsx"),
+route("PronounsPage", "routes/PronounsPage.tsx"),
 ] satisfies RouteConfig;
 export const loader = () => null;

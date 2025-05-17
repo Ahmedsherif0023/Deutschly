@@ -24,6 +24,9 @@ const Team = () => {
               <li>
                 <a href="/AlphabetPage">Alphabet</a>
               </li>
+                <li>
+              <a href="/PronounsPage">Pronouns</a>
+            </li>
               <li>
                 <a href="/VocabPage">Vocabulary</a>
               </li>

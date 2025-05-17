@@ -13,6 +13,7 @@ const Navbar = () => {
         </div>
         <ul className='Navbar-links'>
           <li><a href="/AlphabetPage">Alphabet Learning</a></li>
+          <li> <a href="/PronounsPage">Pronouns Learning</a></li>
           <li><a href="/VocabPage">Vocabulary Learning</a></li>
           <li><a href="/SentenceFormPage">Sentence Formation</a></li>
         </ul>

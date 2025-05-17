@@ -433,13 +433,6 @@ body {
 position: relative; /* Add this */
 }
 
-/* .AlphabetLearning-container .Headd{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  
-} */
 
 .AlphabetLearning-container .Headd {
   display: flex;
@@ -529,9 +522,272 @@ position: relative; /* Add this */
 
 
 /*Vocabulary Page Styles*/
+
+
+.Vocabulary-container{
+ display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.Categories {
+  width: 320px; /* or whatever fits your design */
+  min-width: 220px;
+  max-width: 350px;
+  position: sticky;
+  top: 40px; /* adjust as needed for your header */
+  align-self: flex-start;
+  z-index: 2;
+  background: transparent; /* or a color if you want */
+}
+
+.Find1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Find{
+  top: 0;
+}
+
+.Find ul{
+  list-style: none;
+}
+
+.Find h1{
+  font-size: 20px; 
+  line-height: 28px; 
+  font-weight: 600; 
+  color: #242524FF; 
+}
+.Vocab {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 3 cards per row */
+  gap: 24px; /* space between cards */
+  width: 100%;
+  /* margin: 0 auto; */
+  justify-items: center;
+  margin: 30px;
+}
+.SearchInputWrapper {
+  position: relative;
+  width: 80%;
+  display: flex;
+  align-items: center;
+
+}
+
+.SearchInput {
+  border-radius: 10px;
+  width: 100%;
+  padding-left: 36px; /* space for the icon */
+  height: 36px;
+  font-size: 16px;
+}
+
+.SearchIcon {
+  position: absolute;
+  left: 10px;
+  width: 18px;
+  height: 18px;
+  pointer-events: none;
+  opacity: 0.6;
+}
+.card-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; /* Center horizontally */
+  gap: 0;
+  padding: 0;
+  margin: 0 auto; /* Center the div itself */
+  width: 100%;    /* Ensure it takes full width for centering */
+  margin-left: 20px;
+}
+
+
+.card-footer .pronouncebtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 8px; /* Space between icon and text */
+  margin-left: 40px; /* Remove left margin */
+  width: 10px;
+  margin-right: 40px;
+}
+.card-category {
+  margin: 0; /* Remove any margin */
+  padding-right: 0; /* Remove padding if any */
+  font-size: 15px;
+  background: #636ae8;
+  color: #fff;
+  border-radius: 12px;
+  padding: 2px 8px;
+}
+.Vocab .card{
+    width: 280px; 
+  height: 200px; 
+  background: #40333BFF; 
+  border-radius: 8px; 
+  border-width: 1px; 
+  border-color: #EBEBEAFF; 
+  border-style: solid; 
+  box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1F; /* shadow-xs */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Vocab .card h1 {
+  font-size: 30px; 
+  line-height: 28px; 
+  font-weight: 600; 
+  color: #FFFFFFFF; /* white */
+  text-align: center;           /* Center text horizontally */
+  width: 100%;                  /* Take full width of the card */
+  word-break: break-word;       /* Break long words to next line */
+  display: block;               /* Ensure block-level for centering */
+  margin: 0 auto 8px auto;      /* Center with margin if needed */
+}
+.Vocab .card p{
+ font-size: 20px; 
+  line-height: 20px; 
+  font-weight: 400; 
+  color: #8C8D8BFF; 
+}
+ .hell{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+ }
+.Find ul li button{
+  width: 288px; 
+  height: 36px; 
+  padding: 0 12px; 
+  margin: 5px;
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  font-family: Inter; 
+  font-size: 14px; 
+  line-height: 22px; 
+  font-weight: 500; 
+  color: #40333bff; /* white */
+  background-color: #f0f0f0;
+  opacity: 1; 
+  border: none; 
+  border-radius: 6px; 
+}
+
+.Find ul li button:hover{
+  background: linear-gradient(90deg, #AB2B35FF 0%, #41343CFF 100%); 
+  color: #f0f0f0;
+  transition: 0.8s ease-in-out;
+}
+
+.Find ul li button:focus{
+  background: linear-gradient(90deg, #AB2B35FF 0%, #41343CFF 100%); 
+  color: #f0f0f0;
+  transition: 0.8s ease-in-out;
+  
+}
+
+.card button{
+  width: 288px; 
+  height: 36px; 
+  padding: 0 12px; 
+  margin: 5px;
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  font-size: 20px; 
+}
+
+/*Pronouns Page Styles*/
+.Pronouns-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start; /* Align both containers to the top */
+  width: 100%;
+  margin-top:100px ;
+}
+.Pronouns-container .card{
+  width: 180px;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+}
+
+.Pronouns-container .card h1,
+.Pronouns-container .card p {
+  width: 100%;
+  text-align: center;
+  display: block;
+  margin: auto;
+}
+
+
+.left-container,
+.right-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+  gap: 10px;
+  width: 45%;
+  margin: auto;
+  padding: 20px;
+  border-radius: 30px;
+  background: rgba(64, 51, 59, 0.9); /* semi-transparent dark background */
+  justify-items: center;   /* Center items horizontally */
+  align-items: center;     /* Center items vertically */
+}
+
+
+
+.left-container h1,
+.right-container h1 {
+  grid-column: 1 / -1;      /* Span all columns */
+  text-align: center;       /* Center the text */
+  margin-bottom: 16px;      /* Space below the heading */
+  margin-top: 0;            /* Optional: remove top margin */
+}
+
+.card-footer button{
+  font-size: 25px;
+}
+
+.card-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; /* Center horizontally */
+  gap: 0;
+  padding: 0;
+  margin: 0 auto; /* Center the div itself */
+  width: 100%;    /* Ensure it takes full width for centering */
+}
+
 /*Sentence formation Page Styles*/
+
+  .SentencesForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
 .SentencesForm-container,
-.Vocabulary-container,
 .OurMission-container ,
 .Team-container,
 .ContactUs-container,
@@ -597,4 +853,44 @@ position: relative; /* Add this */
     height: auto;
     font-size: 14px;
   }
+}
+
+@media (max-width: 1024px) {
+  .Vocab {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row on tablets */
+  }
+}
+@media (max-width: 600px) {
+  .Vocab {
+    grid-template-columns: repeat(1, 1fr); /* 1 card per row on mobile */
+  }
+}
+
+
+/*FAQ Page Styles*/
+
+.FAQ-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+  color: #F0f0f0;
+  line-height: 30px;
+}
+.FAQ-container hr{
+  width: 100%;
+  height: 1px;
+  background-color: #8c8d8bff;
+  border: none;
+  margin: 20px 0;
+}
+.FAQ-head{
+  margin-left: 20px;
+}
+
+.FAQ ul{
+  list-style: number;
+  
+  font-size: 20px;
 }

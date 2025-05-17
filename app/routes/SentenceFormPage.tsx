@@ -9,8 +9,10 @@ const SentenceFormPage = () => {
         <Navbar />
       <div className='SentencesForm-container'>
         
-        <h1>Sentences Form page</h1>
-    
+        <div className='SentencesForm'>
+          <h1>Sentences Form page</h1>
+          <h1>Coming Soon......</h1>
+        </div>
       </div>
         <div className="Sixth-main">
           <div className="AppName">
@@ -26,6 +28,9 @@ const SentenceFormPage = () => {
               <li>
                 <a href="/AlphabetPage">Alphabet</a>
               </li>
+                <li>
+              <a href="/PronounsPage">Pronouns</a>
+            </li>
               <li>
                 <a href="/VocabPage">Vocabulary</a>
               </li>
